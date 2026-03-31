@@ -1,0 +1,32 @@
+:root {
+  --bg: #060a14;
+  --card: #1e4ea8;
+  --card-edge: #1a2538;
+  --text: #f9fbff;
+  --text-soft: #e8eefc;
+  --text-dim: #c8d4ec;
+  --muted: #9aa8c4;
+
+  --accent: #0fffb7;
+  --accent-text: #061018;
+  --accent-teal: #5fffd4;
+  --accent-dark: #0bd89a;
+
+  --gold: #e59c5b;
+  --yellow: #fde047;
+  --btn-blue: #247dfc;
+  --btn-blue-deep: #2760ea;
+
+  --rose: #e11d48;
+  --rose-light: #fb7185;
+  --rose-dark: #9f1239;
+  --rouge-gradient: linear-gradient(165deg, var(--rose-light), var(--rose) 45%, var(--rose-dark));
+
+  --border: rgba(122, 133, 165, 0.28);
+  --overlay-light: rgba(255, 255, 255, 0.12);
+  --overlay-dark: rgba(0, 0, 0, 0.35);
+
+  --radius: 14px;
+  --wrap-pad: 16px;
+  --content-max: 1120px;
+}

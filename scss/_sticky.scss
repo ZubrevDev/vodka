@@ -1,0 +1,128 @@
+.sticky {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 40;
+  padding: 20px 0 calc(14px + env(safe-area-inset-bottom, 0px));
+}
+
+.sticky__inner {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--wrap-pad);
+}
+
+.sticky__bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(26, 37, 56, 0.98), var(--card) 50%, #101824);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 0 1px rgba(15, 255, 183, 0.12),
+    0 -8px 40px rgba(0, 0, 0, 0.45),
+    0 0 48px rgba(36, 125, 252, 0.12);
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 16px 40px;
+    padding: 0 18px;
+    overflow: visible;
+  }
+}
+
+.sticky__banner {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-column: 2;
+    width: 80px;
+    height: 64px;
+    overflow: visible;
+  }
+}
+
+.sticky__banner-img {
+  display: block;
+  width: 110px;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(-18%) scale(1.1);
+
+}
+
+.sticky__promo {
+  grid-column: 1;
+  text-align: left;
+  min-width: 0;
+}
+
+.sticky__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin: 0;
+}
+
+.sticky__fs {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  text-shadow: 0 0 28px rgba(15, 255, 183, 0.35);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.9rem;
+  }
+}
+
+.sticky__pct {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: var(--rouge-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.9rem;
+  }
+}
+
+.sticky__btn {
+  grid-column: 2;
+  width: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+  background: linear-gradient(165deg, var(--btn-blue), var(--btn-blue-deep));
+  color: #fff;
+  box-shadow: 0 6px 28px rgba(36, 125, 252, 0.45);
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: 3;
+    min-width: 200px;
+    font-size: 1rem;
+    padding: 16px 24px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0 8px 36px rgba(36, 125, 252, 0.55);
+    }
+  }
+}

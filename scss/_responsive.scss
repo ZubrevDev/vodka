@@ -1,0 +1,31 @@
+/* Small devices (600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    --wrap-pad: 20px;
+  }
+}
+
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --wrap-pad: 24px;
+  }
+}
+
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --content-max: 1140px;
+  }
+}
+
+/* Fallback for background-clip */
+@supports not (background-clip: text) {
+  .top__hook {
+    color: var(--gold);
+  }
+
+  .sticky__pct {
+    color: var(--btn-blue);
+  }
+}

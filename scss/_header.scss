@@ -1,0 +1,104 @@
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(10, 14, 22, 0.92);
+}
+
+.top__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top__brand-link {
+  flex-shrink: 0;
+}
+
+.top__logo {
+  height: 22px;
+  width: auto;
+}
+
+.top__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px 14px;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.top__pitch {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  text-align: left;
+
+  @media only screen and (min-width: 600px) {
+    display: flex;
+  }
+}
+
+.top__hook {
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  max-width: 16rem;
+  color: var(--accent); 
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.top__hit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px 14px 9px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.15;
+  background: linear-gradient(165deg, var(--rose-light), var(--rose) 45%, var(--rose-dark));
+  color: #fff;
+
+  @media only screen and (max-width: 600px) {
+    padding: 8px 16px 9px;
+  }
+}
+
+.top__hit-main {
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.72rem;
+  }
+}
+
+.top__hit-sub {
+  margin-top: 2px;
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.top__hit:active {
+  transform: scale(0.97);
+  opacity: 0.92;
+}
+
+.top__hit:hover {
+  transform: scale(0.98);
+  opacity: 0.95;
+}

@@ -1,0 +1,138 @@
+.card {
+  padding: 20px;
+  background: linear-gradient(165deg, var(--card-edge) 0%, var(--card) 45%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+  @media only screen and (min-width: 768px) {
+    padding: 24px;
+  }
+}
+
+.block {
+  margin-bottom: 28px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+}
+
+.block--cta {
+  padding: 22px;
+  background: rgba(20, 29, 46, 0.65);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    padding: 28px;
+  }
+}
+
+.h2 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  font-weight: 800;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 1.35rem;
+  }
+}
+
+.h2--follow {
+  margin-top: 1.75rem;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 2.25rem;
+  }
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 42em;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 0.95rem;
+  }
+}
+
+.bullets li {
+  margin-bottom: 10px;
+}
+
+.bullets li strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.cta-line {
+  margin: 0 auto 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  max-width: 36em;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 24px 0;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.bonus-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.bonus-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
+}
+
+.bonus-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(122, 133, 165, 0.1);
+  color: var(--text);
+}
+
+.bonus-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.bonus-table td:nth-child(2) {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.js-games-swiper .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  user-select: none;
+  -webkit-user-drag: none;
+}
