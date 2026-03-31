@@ -51,8 +51,13 @@
   font-size: 0.75rem;
   font-weight: 800;
   line-height: 1.2;
-  max-width: 16rem;
-  color: var(--accent); 
+  white-space: nowrap;
+  background: linear-gradient(90deg, #fef08a, var(--gold), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
   @media only screen and (min-width: 768px) {
     font-size: 1.2rem;
   }
